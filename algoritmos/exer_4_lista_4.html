@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    você já clicou <b id="vezes">0</b> vezes!
+    <button onclick="clicar()">Clique aqui</button>
+</body>
+</html>
+<script>
+function clicar(){
+    var x = Number(vezes.innerHTML)
+    var conta = x + 1
+    vezes.innerHTML = conta;
+}
+
+</script>

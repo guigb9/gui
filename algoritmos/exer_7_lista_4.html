@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de PG</h1>
+    1º Número: <input id="numero_1" placeholder="numero 1"> <br>
+    razão: <input id="numero_2" placeholder="numero 2"> <br>
+    Número da progressão que deseja ver: <input id="seq_0"> <br>
+    <button onclick="calcular_pg()">Calcular PG</button>
+    <div id="mostrar_0"></div>
+</body>
+</html>
+<script>
+    function calcular_pg(){
+        var n1 = Number(numero_1.value)
+        var n2 = Number(numero_2.value)
+        var nq = Number(seq_0.value)
+        var resultado = (n1 * (n2**(nq-1)))
+        mostrar_0.innerHTML = `O ${nq}º Número desta sequência é ${resultado}`
+
+    }
+
+
+</script>

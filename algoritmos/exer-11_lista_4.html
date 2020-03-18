@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cofrinho</h1>
+    Valor guardado no cofrinho R$:<span id="valor">0</span><br>
+    Quantidade de depósitos feitos: <b id="qntd_dep">0</b> <br>
+    Quantidade de retiradas feitas: <b id="qntd_ret">0</b>
+    Valor a ser depositado: <input id="deposito" autofocus placeholder=deposito><br>
+    <button onclick="depositar()">Depositar</button>
+    <br>
+    <button onclick="zerar()">Retirar toda a grana</button>
+</body>
+</html>
+<script>
+    var val = 0
+    var cont = 0
+    var cont_1 = 0
+
+    function depositar(){
+        val += Number(deposito.value)
+        valor.innerHTML = val.toFixed(2)
+        cont++
+        qntd_dep.innerHTML = cont
+    }
+    function zerar(){
+        val = 0;
+        valor.innerHTML = val;
+        cont_1++
+        qntd_ret.innerHTML = cont_1
+    }
+
+
+</script>

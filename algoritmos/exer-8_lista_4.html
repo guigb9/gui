@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Carro à Vista: <input id="val_vista">
+    Taxa de juros ao mês: <input id="tax_jur">
+    Qntd. de parcelas: <input id="qntd_parc">
+    <button onclick="prejuizo()">Calcular Preju</button>
+    <div id="resultado_0"></div>
+</body>
+</html>
+<script>
+    function prejuizo(){
+        var carro = Number(val_vista.value)
+        var parcelas = Number(qntd_parc.value)
+        var juros = Number(tax_jur.value)/100
+        var n1 = (carro/parcelas)
+        var resultado = (n1.toFixed(2))*((n1.toFixed(2)*juros)**(parcelas-1))
+        resultado_0.innerHTML = resultado;
+
+        
+
+
+    }
+
+
+
+</script>

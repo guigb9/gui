@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Numero 1: <input placeholder="Numero 1" id="n1" autofocus> <br>
+    Numero 2: <input placeholder="Numero 2" id="n2"> <br>
+    <button onclick="calculo()">Calcular</button>
+    <div id="exibir_0"></div>
+</body>
+
+<!--
+n1 | n2 | resultado
+2  | 25 | 5
+3  | 8  | 2
+3  | 27 | 3
+
+
+
+-->
+</html>
+<script>
+function calculo(){
+    var x1 = Number(n1.value)
+    var x2 = Number(n2.value)
+    var resultado = (x1**x2)
+    exibir_0.innerHTML = `${x1} elevado a ${x2} é ${resultado}`
+}
+
+
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira o Raio da circunferência : <input placeholder="Raio" id="raio">
+    <button onclick="confirma_0()">Confirmar</button>
+    <div id="exibir_calculo"></div>
+</body>
+<!--
+Teste de Mesa
+raio | área
+2    | 12,56
+3    | 28,26
+4    | 50,24
+-->
+</html>
+<script>
+function confirma_0(){
+    var R = Number(raio.value)
+    var pi = 3.14
+    var resultado = pi*(R**2)
+    exibir_calculo.innerHTML = `A área da circunferência é: ${resultado}`
+
+}
+
+
+</script>
+
+
+
+
