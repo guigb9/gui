@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 17 - entrada de dados</title>
+</head>
+<body>
+    Seu nome: <br> <input id="nome">
+    <br>
+    Seu bairro:<br> <input id="bairro">
+    <br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <button onclick="falarsoma()">qual o dobro de 15?</button>
+</body>
+</html>
+<script>
+    function cadastrar(){
+        alert(`Seu nome é: ${nome.value}`)
+        alert(`Seu bairro é: ${bairro.value}`)
+        alert("Você mora no bairro: " + bairro.value + "UAU!")
+        alert(`Seu bairro é: ${bairro.value} uau!`)
+    }
+    function falarsoma(){
+        alert(`O dobro de 15 é: ${15*2}`)
+    }
+</script>

@@ -1,0 +1,67 @@
+Refaça o programa da questão anterior de tal forma que a mensagem do item b) apareça com uma cor de fundo preta e cor de letra amarela.
+
+
+9. Crie um programa em HTML/JS o qual:
+a) Tenha os botões "Pare", "Pense" e "Siga".
+b) Ao clicar no 1º, aparece na própria página, abaixo dos botões uma frase "Pare e aguarde!". Ao clicar no 2º botão, a frase a aperecer, no mesmo lugar será "Pense se pode seguir ou se deve parar!". Ao clicar no 3º botão, a frase a aperecer, no mesmo lugar será "Pode seguir adiante :)".
+
+
+10. Refaça o programa da questão anterior de tal forma que cada mensagem tenha cores de fundo e letra diferentes:
+a) Mensagem do 1º botão: com cor de fundo vermelha e letra branca
+b) Mensagem do 2º botão: com cor de fundo preta e letra amarela
+c) Mensagem do 3º botão: com cor de fundo branca e letra verde
+OBS: Não pode aparecer mais de uma mensagem ao mesmo tempo. Sempre só uma mensagem por vez.
+
+
+11. Crie um programa em HTML/JS que simule a notificação de gols numa partida de futebol assim...
+a) Tenha um título grande com  a frase "Brasil x Alemanha"
+b) Abaixo desse título, os botões "Gol do Brasil" e "Gol da Alemanha"
+c) Abaixo dos botões deve haver um texto em negrito dizendo "Tempo real do jogo:"
+d) Sempre que o 1º botão for clicado, deve aparecer, a frase
+    É goooolll do Brasil!!!
+e) Sempre que o 2º botão for clicado, deve aparecer, a frase
+    É goooolll da Alemanha!!!
+f) Detalhe importante: As frase descritas em d) e e) devem ir de acumulando abaixo do que já existia na página. Ou seja, a primeira vez que clicar em algum dos botões o texto deve ficar abaixo do texto descrito em c). E depois cada vez abaixo do que já existia e assim por diante.
+
+
+12. Refaça o programa da questão anterior de tal forma que:
+a) A frase de gol do Brasil apareça na cor verde
+b) A frase de gol da Alemanha apareça com cor de fundo vermelho escuro e letra amarela
+
+
+13. Refaça o programa da questão anterior de tal forma que:
+a) Exista um terceiro botão, ao lado dos anteriores, o "Recomeçar partida"
+b) Ao clicar no novo botão, todos os textos de "gol..." somem  da página (os demais itens, que já estão na página desde o inicio, não somem)
+
+
+14. Crie um programa em HTML/JS a qual:
+a) Tenha os botões "Gente tímida" e "Gente que causa"
+b) Abaixo dos botões já deve aparecer a foto de uma pessoa com cara de confiante
+c) Ao clicar no primeiro botão, a foto some
+d) Ao clicar no segundo botão, a foto aparece
+
+
+15. Crie um programa em HTML/JS a qual:
+a) Tenha os botões "Pessoa fria", "Pessoa neutra", "Pessoa nervosa"
+b) Abaixo dos botões deve haver um texto na cor preta dizendo "Bom dia, colegas"
+c) Ao clicar no primeiro botão, o texto fica com a cor azul escuro
+d) Ao clicar no segundo botão, o texto fica com a cor cinza
+e) Ao clicar no terceiro botão, o texto fica com a cor vermelha
+OBS: não é para mudar o conteúdo do texto, e sim alterar apenas sua cor!
+
+
+16. Crie um programa em HTML/JS a qual:
+a) Tenha um título grande no inicio "O que faz um triatleta?"
+b) Tenha os botões "Nada", "Corre" e "Pedala"
+c) Ao clicar no 1º botão, aparece, abaixo dos botões, a foto de alguém nadando
+d) Ao clicar no 2º botão, aparece, abaixo dos botões, a foto de alguém correndo
+e) Ao clicar no 3º botão, aparece, abaixo dos botões, a foto de alguém pedalando
+
+
+17. Crie um programa em HTML/JS a qual:
+a) Tenha um título grande no inicio "A história de uma pizza"
+b) Tenha os botões "Acabou de chegar", "Depois de 1 minuto", "Depois de 5 minutos" e "Depois de 15 minutos"
+c) Ao clicar no 1º botão, aparece, abaixo dos botões, a foto de uma pizza inteira
+d) Ao clicar no 2º botão, aparece, abaixo dos botões, a foto de uma pizza inteira com uma ou duas fatias tiradas
+e) Ao clicar no 3º botão, aparece, abaixo dos botões, a foto de uma pizza pela metade
+f) Ao clicar no 4º botão, aparece, abaixo dos botões, a foto de um prato vazio (ou com restos de uma pizza, se achar uma imagem assim)

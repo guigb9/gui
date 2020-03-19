@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Brasil x Alemanha</h1>
+
+    <button onclick="g_brasil()">Gol do Brasil</button>
+    <button onclick="g_alemanha()">Gol da Alemanha</button>
+    <button onclick="clr_0()">Nova Partida</button>
+
+    <br>
+
+    <span style="color: maroon;" id="adc_gol">
+
+    </span>
+</body>
+</html>
+<script>
+    function g_brasil(){
+        adc_gol.innerHTML += '<span style="color: green;">É goooolll do Brasil!!!</span><br>';
+
+    }
+    function g_alemanha(){
+        adc_gol.innerHTML += '<span style="color: yellow; background-color: #8b0000">É goooolll da Alemanha!!!</span><br>';
+
+    }
+    function clr_0(){
+        adc_gol.innerHTML = '';
+    }
+</script>

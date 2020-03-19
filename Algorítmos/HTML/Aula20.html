@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color: purple">Cálculos Simples</h3>
+
+    Primeiro Numero: <input id="numero1"><br>
+    Segundo Numero: <input id="numero2"><br>
+    <br>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="somar()">Somar</button>
+    <div id="div_resultado"></div>
+</body>
+</html>
+<script>
+    function subtrair(){
+        div_resultado.innerHTML = `A subtração é: ${numero1.value - numero2.value} !`
+    }
+    function multiplicar(){
+        div_resultado.innerHTML = `A multiplicação é: ${numero1.value * numero2.value} !`
+    }
+    function dividir(){
+        div_resultado.innerHTML = `A divisão é: ${numero1.value/numero2.value} !`
+    }
+    function somar(){
+        div_resultado.innerHTML = `A soma é: ${Number(numero1.value) + Number(numero2.value)} !`
+    }
+
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exercício 9</h3>
+    <br>
+    <button onclick="p_aguade()" style="color: red;"><b>Pare</b></button>
+    <button onclick="pense_0()" style="color: gold;"><b>Pense</b></button>
+    <button onclick="siga_0()" style="color: green;"><b>Siga</b></button>
+    <br>
+    
+    <span id="campo_0">
+
+    </span>
+
+</body>
+</html>
+<script>
+    function p_aguade(){
+        campo_0.innerHTML = '<span style="color: red;">Pare e Aguarde</span>';
+    }
+    function pense_0(){
+        campo_0.innerHTML = '<span style="color: gold;">Pense</span>';
+    }
+    function siga_0(){
+        campo_0.innerHTML = '<span style="color: green;">Siga</span>';
+    }
+</script>

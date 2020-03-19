@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color: blueviolet;">Esconde e mostra elementos</h3> <br>
+    <b style="color: red;">Há segredos aqui cuidado! </b> <br>
+
+    <button id="mostrar_segredo1" style="display: block;color: darkblue; background-color: gold;" onclick="mostrar_segredo()">Ver o segredo</button>
+    <button id="esconder_segredo1" style="display: none; color: darkblue; background-color: gold;" onclick="esconder_segredo()"> Esconder o segredo</button>
+    <br>
+    <span id="span_segredo" style="display: none; color: blue;">
+        Você é o senhor do que cala e escravo do que fala!
+        </span>
+</body>
+</html>
+<script>
+    function mostrar_segredo(){
+        span_segredo.style.display = 'block';
+        esconder_segredo1.style.display = 'block';
+        mostrar_segredo1.style.display = 'none';
+
+    }
+
+    function esconder_segredo(){
+        span_segredo.style.display = 'none'
+        esconder_segredo1.style.display = 'none';
+        mostrar_segredo1.style.display = 'block';
+    }
+</script>

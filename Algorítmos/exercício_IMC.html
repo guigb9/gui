@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="COLOQUE_O_PESO" placeholder="Peso" autofocus>
+    <input id="COLOQUE_A_ALTURA" placeholder="altura">
+    <button onclick="IMC()">Calcular IMC</button>
+    <div id="div_tela"></div>
+</body>
+</html>
+<script>
+function IMC(){
+    var peso = Number(COLOQUE_O_PESO.value)
+    var altura = Number(COLOQUE_A_ALTURA.value)
+    var IMC = peso/(altura**2)
+    div_tela.innerHTML = `Seu IMC é de ${IMC.toFixed(2)}`
+
+}
+</script>

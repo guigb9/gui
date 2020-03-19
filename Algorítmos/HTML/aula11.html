@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="falar_coisa_boa()">
+         Falar pizza de batata 
+    </button>
+
+    <button onclick="falar_pizza_de_neve()"> 
+        Falar uma coisa ruim 
+    </button>
+
+    <button onclick="verd_3()">
+        Falar 3 verdades
+    </button>
+    <div id="div_mensagem">
+
+    </div>
+
+
+</body>
+</html>
+<script>
+    
+    function falar_coisa_boa(){
+        // alert('Quem acredita sempre alcança.');
+        div_mensagem.innerHTML = 'Quem acredita sempre alcança.';
+    }
+
+    function falar_pizza_de_neve(){
+        // alert('pizza de neve');
+        div_mensagem.innerHTML = 'Pizza de Neve';
+    }
+
+    function  verd_3(){
+        // alert('agua com gás é ruim');
+        // alert('carnaval so tem traveco');
+        // alert('sushi é bom');
+        div_mensagem.innerHTML += 'podridao <br>';
+        div_mensagem.innerHTML += 'pizza é bom <br>';
+        div_mensagem.innerHTML += 'agua com gas é ruim <br>';
+        
+    }
+
+</script>

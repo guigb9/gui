@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="africa()">África</button>
+  <button onclick="america()">América</button>
+  <button onclick="asia()">Ásia</button>
+  <button onclick="europa()">Europa</button>
+  <button onclick="oceania()">Oceania</button>
+    <br>
+    <div id="divimg"></div>
+    
+
+</body>
+</html>
+<script>
+    function africa(){
+        divimg.innerHTML = '<img style="height: 200px" src="C_africa.jpg" alt="continente africano"> <br> Africa'
+    }
+    function america(){
+        divimg.innerHTML = '<img style="height: 200px" src="C_america.jfif" alt="continente americano"> <br> <span style="color: red">América</span>'
+    }
+    function asia(){
+        divimg.innerHTML = '<img style="height: 200px" src="C_asia.png" alt="continente asiático"> <br> <span style="color: yellow">Ásia</span>'
+    }
+    function europa(){
+        divimg.innerHTML = '<img style="height: 200px" src="C_europa.jpg" alt="continente europeu"> <br> <span style="color: blue">Europa</span>'
+    }
+    function oceania(){
+        divimg.innerHTML = '<img style="height: 200px" src="C_oceania.jpg" alt="continente oceania"> <br> <span style="color: green">Oceania</span>'
+    }
+</script>

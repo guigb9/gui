@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5 Lista3</title>
+</head>
+<body>
+    <h3>Exercício 5 Lista 3</h3>
+    <br>
+    Valor da Passagem: <br> <input id="valor_passagem">
+    <br>
+    Viagens por mês: <br> <input id="qtd_viagens">
+    <br>
+    <button onclick="calcularvt()">Calcular VT</button>
+    <div id="divmensagem"></div>
+</body>
+</html>
+<script>
+    function calcularvt(){
+        divmensagem.innerHTML = `você vai gastar <u> R$: ${valor_passagem.value * qtd_viagens.value} </u>`
+    }
+</script>

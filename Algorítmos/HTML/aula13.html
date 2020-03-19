@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estalar o Thanos</h1>
+    <h3>Limpando conteúdo</h3>
+    Vingadores: <br>
+    Capitão América <br>
+    <b id="b_pantera">Pantera Negra</b> <br>
+    Hulk <br>
+    <i id="i_aranha">Homem Aranha</i><br>
+    Homem de Ferro <br>
+    <span id="span_estranho">Dr. Estranho</span><br>
+
+    <div>Metade dos seres vivos sortudos</div>
+    <div id="div_azarados">
+        Metade dos seres vivos azarados
+    </div>
+    <button onclick="estalar()">
+        You should have gone for the head!
+    </button>
+</body>
+</html>
+<script>
+    function estalar(){
+        b_pantera.innerHTML = '';
+        i_aranha.innerHTML = '';
+        span_estranho.innerHTML = '';
+        div_azarados.innerHTML = '';
+    }
+</script>

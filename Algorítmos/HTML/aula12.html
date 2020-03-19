@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cenoura()">
+        cenoura
+    </button>
+    
+    <button onclick="batata()">
+        batata
+    </button>
+    
+    <button onclick="tomate()">
+        tomate
+    </button>
+
+    <div id="div_lista_de_compras">
+        <b>Lista de Compras</b>
+    </div>
+</body>
+</html>
+<script>
+    function cenoura(){
+        div_lista_de_compras.innerHTML += '* cenoura<br>';
+    }
+    function batata(){
+        div_lista_de_compras.innerHTML += '* batata<br>';
+    }
+    function tomate(){
+        div_lista_de_compras.innerHTML += '* tomate<br>';
+    }
+
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>q2 prova</title>
+</head>
+<body>
+    Jogador A: <input id="jog_A"> <br>
+    Quantidade de jogos jogados: <input id="qtd_jogos"> <br>
+    Quantidade de gols marcados: <input id="qtd_gols"> <br>
+    <button onclick="media_gols()">Calcular média de gols</button>
+    <br>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function media_gols(){
+    div_mensagem.innerHTML = `<u>${jog_A.value}</u> marcou <b> ${qtd_gols.value} </b> gols em <b>${qtd_jogos.value}</B> jogos. Assim, sua média foi de <b style="color: red">${qtd_gols.value/qtd_jogos.value}</b> gols/partida.`
+    }
+</script>

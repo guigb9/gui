@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 3 EX4</title>
+</head>
+<body>
+    <h3>Lista 3 EX4</h3>
+    <br>
+    Nota1: <input id="n1"> <br>
+    Nota2: <input id="n2"> <br>
+    <button onclick="calc_m()">Calcular Média</button>
+    <div id="div_media"></div>
+</body>
+</html>
+<script>
+function calc_m(){
+    var media = (Number(n1.value) + Number(n2.value))/2
+    div_media.innerHTML = `Sua média é: ${media}`
+}
+</script>

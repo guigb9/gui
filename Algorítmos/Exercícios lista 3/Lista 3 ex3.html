@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista3 EX3</title>
+</head>
+<body>
+    <h3>Lista 3 EX3</h3>
+
+    <br>
+
+    Cidade Natal: <br> <input id="cid_natal"> <br>
+    Ano de Nascimento: <br> <input id="ano_nasc"> <br>
+    <br>
+    <button onclick="cadastrar_func()">Cadastrar</button>
+    <div id="div_mens"></div>
+    
+</body>
+
+</html>
+<script>
+function cadastrar_func(){
+    div_mens.innerHTML = `Você nasceu na cidade: <b>${cid_natal.value}</b> em <u>${ano_nasc.value}</u> !`
+
+}
+
+</script>

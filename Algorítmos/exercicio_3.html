@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero_0" placeholder="seu numero" autofocus>
+    <button onclick="calcular_raiz_2()">Calcular Raiz Quadrada</button>
+    <button onclick="calcular_raiz_3()">Calcular Raiz Cúbica</button>
+    <div id="mostrar_resultado"></div>
+</body>
+</html>
+<script>
+function calcular_raiz_2(){
+    var quadrado = Number(numero_0.value)
+    var resultado = quadrado**(1/2)
+    mostrar_resultado.innerHTML = `A raiz quadrada de ${numero_0.value} é ${resultado}`
+}
+function calcular_raiz_3(){
+    var cubo = Number(numero_0.value)
+    var resultado2 = cubo**(1/3)
+    mostrar_resultado.innerHTML = `A raiz cubica de ${numero_0.value} é ${resultado2}`
+}
+</script>

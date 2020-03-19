@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="raio" placeholder="coloque o raio" autofocus>
+    <button onclick="calcular_area()">Calcular Area</button>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function calcular_area(){
+        var pi = 3.14
+        var raiod = Number(raio.value)
+        var resultado = pi * (raiod**2)
+        exibir.innerHTML = `o resultado é ${resultado.toFixed(2)}`
+    }
+</script>

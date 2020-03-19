@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>História de uma pizza</h1>
+    <br>
+    <button onclick="acabou_de_chegar()">Acabou de Chegar</button>
+    <button onclick="depois_de_1_minuto()">Depois de 1 minuto</button>
+    <button onclick="depois_de_5_minutos()">Depois de 5 minutos</button>
+    <button onclick="depois_de_15_minutos()">Depois de 15 minutos</button>
+    <br>
+    <div id="div_1"></div>
+
+</body>
+</html>
+<script>
+    function acabou_de_chegar(){
+        div_1.innerHTML = '<img src="pizza1.png" alt="pizza inteira">'
+    }
+    function depois_de_1_minuto(){
+        div_1.innerHTML = '<img src="pizza2.jpg" alt="pizza sem 1 pedaço">'
+    }
+    function depois_de_5_minutos(){
+        div_1.innerHTML = '<img src="pizza 3.jpg" alt="pizza pela metade">'
+    }
+    function depois_de_15_minutos(){
+        div_1.innerHTML = '<img src="pizza 4.jpg" alt="prato sujo de pizza">'
+    }
+</script>
