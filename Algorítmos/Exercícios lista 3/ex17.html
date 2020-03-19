@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício 16</h1>
+    <select  id="oracao">
+        <option value="Escolha uma opção">- Escolha -</option>
+        <option value="que eu leve o amor">Onde houver ódio</option>
+        <option value="que eu leve o perdão">Onde houver ofensa</option>
+        <option value="que eu leve a união">Onde houver discórdia</option>
+        <option value="que eu leve a verdade">Onde houver erro</option>
+
+    </select>
+    <button onclick="ora()">Revelar Boa Obra</button>
+    <div id="mostra"></div>
+
+</body>
+</html>
+<script>
+function ora(){
+    mostra.innerHTML =    `<span style="color: green"> ${oracao.value}</span>`
+}
+
+</script>

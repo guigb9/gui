@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exercício 20</h3>
+    Sabor da Pizza: <br> <input id="s_pizza" placeholder="sabor da pizza" autofocus>
+    <br>
+    <select id="selecao_0">
+        <option value="0">- Escolha -</option>
+        <option value="15">Queijo</option>
+        <option value="5">Presunto</option>
+        <option value="2">Ovo</option>
+        <option value="6">Palmito</option>
+        <option value="6">Frango</option>
+        <option value="10">Catupiry</option>
+    </select>
+    <br>
+    <select id="selecao_1">
+        <option value="0">- Escolha -</option>
+        <option value="15">Queijo</option>
+        <option value="5">Presunto</option>
+        <option value="2">Ovo</option>
+        <option value="6">Palmito</option>
+        <option value="6">Frango</option>
+        <option value="10">Catupiry</option>
+    </select>
+    <br>
+    <select id="selecao_2">
+        <option value="0">- Escolha -</option>
+        <option value="15">Queijo</option>
+        <option value="5">Presunto</option>
+        <option value="2">Ovo</option>
+        <option value="6">Palmito</option>
+        <option value="6">Frango</option>
+        <option value="10">Catupiry</option>
+    </select>
+    <br>
+    <button onclick="calc_preco()">Calcular Preço da Pizza</button>
+    <div id="val_mostrar"></div>
+
+</body>
+</html>
+<script>
+function calc_preco(){
+    var sabor_1 = Number(selecao_0.value)
+    var sabor_2 = Number(selecao_1.value)
+    var sabor_3 = Number(selecao_2.value)
+    var resultado = sabor_1 + sabor_2 + sabor_3
+
+val_mostrar.innerHTML = `A pizza de sabor <b>${s_pizza.value}</b> vai custar <u>R$${resultado}</u>`
+}
+</script>

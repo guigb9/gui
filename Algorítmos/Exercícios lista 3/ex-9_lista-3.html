@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de filhos: <br> <input id="qntd_fil"> <br>
+    <button onclick="c_aux()">Calcular Auxílio Filhos</button> <br>
+    <div id="exibir_calc"></div>
+</body>
+</html>
+<script>
+    function c_aux(){
+        var x = Number(qntd_fil.value)
+        var calculo = 25*x
+        exibir_calc.innerHTML = `Você tem ${x} filhos, logo seu "Auxílio Filhos" será de R$${calculo}`
+    }
+</script>

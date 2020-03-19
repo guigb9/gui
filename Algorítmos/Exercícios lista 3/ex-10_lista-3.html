@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de filhos menores de 10 anos: <br> <input id="qntd_fil"> <br>
+    Quantidade de filhos a partir de 10 anos: <br> <input id="qntd_fil_1">
+    <button onclick="c_aux()">Calcular Auxílio Filhos</button> <br>
+    <div id="exibir_calc"></div>
+</body>
+</html>
+<script>
+    function c_aux(){
+        var x = Number(qntd_fil.value)
+        var y = Number(qntd_fil_1.value)
+        var calculo = 30*x + 20*y
+        exibir_calc.innerHTML = `Você tem ${x} filhos menores de 10 anos e ${y} filhos a partir de 10 anos, logo seu "Auxílio Filhos" será de R$${calculo}`
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nome do aluno: <br> <input id="nome_aluno" placeholder="nome" autofocus> <br>
+    quantidade de aulas do curso: <br> <input id="qntd_aulas" placeholder="aulas"> <br>
+    quantidade de aulas faltadas: <br><input id="qntd_faltas" placeholder="faltas"><br>
+    <button onclick="frequencia()">Calcular Frequência</button>
+    <div  id="m_0" style="height: 20px;"></div>
+    <div style="background-color: red; height: 20px; display: none;" id="m_1"></div>
+</body>
+</html>
+<script>
+    function frequencia(){
+        var x1 = Number(qntd_aulas.value)
+        var x2 = Number(qntd_faltas.value)
+        var conta = 100 - (x2*100/x1)
+        m_0.innerHTML = `<span style="color: blue;">Olá ${nome_aluno.value}!Sua frequência foi de</span> <b style="color: green;">${conta.toFixed(2)}%</b>`
+        m_1.style.width = `${conta}%`
+        m_1.style.display = 'block';
+    }
+</script>

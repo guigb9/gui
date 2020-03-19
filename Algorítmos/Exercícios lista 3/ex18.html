@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    nome: <input id="digi_nome" placeholder="seu nome" autofocus>
+    <select  id="selecionar_0">
+        <option value="">- selecione -</option>
+        <option value="valorize menos processos e ferramentas e mais Indivíduos e interações">processos e ferramentas</option>
+        <option value="valorize menos documentação abrangente e mais Software em funcionamento">documentação abrangente</option>
+        <option value="valorize menos negociação de contratos e mais Colaboração com o cliente">negociação de contratos</option>
+        <option value="valorize menos seguir um plano e mais Responder a mudanças">seguir um plano</option>
+    </select>
+    <button onclick="p_agl()">#Partiuagilidade</button>
+    <div style="color: blue" id="mostrar_0"></div>
+</body>
+</html>
+<script>
+    function p_agl(){
+        var slc = selecionar_0.value
+        var nome = digi_nome.value
+
+        mostrar_0.innerHTML = `Então ${nome}, ${slc}`
+    }
+
+
+</script>
