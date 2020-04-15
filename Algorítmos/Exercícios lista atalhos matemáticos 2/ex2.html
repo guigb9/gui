@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="nota()">Gerar nota de aluno entre 0 e 10</button>
+    <button onclick="freq()">Gerar frequência de aluno entre 0 e 100</button>
+    <div id="m0"></div>
+    <div id="m1"></div>
+</body>
+</html>
+<script>
+    function nota(){
+        var nota1 = ((Math.random() * 11).toFixed(2))
+        if(nota1>10){
+            nota1 = 10
+        }
+        else if(nota1<0.1){
+            nota1= 0
+            
+        }
+        m0.innerHTML = nota1
+    }
+    function freq(){
+        var freq1 = ((Math.random() * 101).toFixed(2))
+        if(freq1>100){
+            freq1 = 100
+        }
+        else if(freq1<0.1){
+            freq1 = 0
+        }
+        m1.innerHTML = freq1
+    }
+</script>

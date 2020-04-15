@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ki Base: <input id="ki_base" placeholder="Ki" autofocus> <br>
+    <button onclick="ssj_1()">SSJ</button>
+    <button onclick="ssj_2()">SSJ2</button>
+    <button onclick="ssj_3()">SSJ3</button>
+    <span style="display: none;" id="texto_0"> Após se transformar em <u id="transformado"></u>, o ki desse Sayajin passa a ser de <u id="ki_transformado"></u> </span>
+</body>
+</html>
+<script>
+    function ssj_1(){
+        var ki = Number(ki_base.value)
+        var resultado = ki*50
+        texto_0.style.display = 'block' 
+        transformado.innerHTML = 'SSJ'
+        ki_transformado.innerHTML = resultado
+    }
+    function ssj_2(){
+        var ki = Number(ki_base.value)
+        var resultado = ki*100
+        texto_0.style.display = 'block' 
+        transformado.innerHTML = 'SSJ2'
+        ki_transformado.innerHTML = resultado
+    }
+    function ssj_3(){
+        var ki = Number(ki_base.value)
+        var resultado = ki*200
+        texto_0.style.display = 'block' 
+        transformado.innerHTML = 'SSJ3'
+        ki_transformado.innerHTML = resultado
+    }
+</script>

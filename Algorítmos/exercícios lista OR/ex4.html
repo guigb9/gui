@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="nome da empresa" id="nome_empresa" autofocus> <br>
+    <input placeholder="valor da bolsa" id="valor_bolsa"> <br>
+    <input placeholder="VR da Empresa por dia" id="vr_empresa"> <br>
+    <input placeholder="Tempo de deslocamento para a bandtec" id="tempo_deslocamento"> <br>
+    <button onclick="func_0()">É preferida?!</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function func_0(){
+        var nome = nome_empresa.value
+        var bolsa = Number(valor_bolsa.value)
+        var vr = Number(vr_empresa.value)
+        var desl = Number(tempo_deslocamento.value)
+        if(bolsa >= 1800 || vr >=20 || desl <= 30){
+            m0.innerHTML = `A empresa ${nome} é uma de suas preferências`
+        } else{
+            m0.innerHTML = `A empresa ${nome} está fora da sua lista`
+        }
+
+    }
+</script>

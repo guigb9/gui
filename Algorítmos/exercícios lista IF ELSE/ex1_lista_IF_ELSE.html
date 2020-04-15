@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Quantidade de Latinhas por dia: <input id="l_ref"> <br>
+   <button onclick="calc()">Quantos refris</button>
+   <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function calc(){
+
+        var refri = Number(l_ref.value)
+        var ano = refri*365
+        exibir.innerHTML = `você consome ${ano.toFixed(2)} latinhas de refrigerante por ano <br> <span id="x"></span>`
+        if(ano >= 500){
+            x.innerHTML = 'Cuidado com a Diabetes'
+        }
+    }
+</script>

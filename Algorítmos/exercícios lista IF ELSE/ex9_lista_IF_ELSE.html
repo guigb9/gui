@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    quantidade de homens: <input id="qntd_h"> <br>
+    quantidade de mulheres: <input id="qntd_m">
+    <button onclick="anp()">Analisar Peso</button>
+    <div id="m0"></div>
+
+</body>
+</html>
+<script>
+    function anp(){
+        var h = Number(qntd_h.value)
+        var m = Number(qntd_m.value)
+        var peso = h*80 + m*60
+        m0.innerHTML = `Este elevador suporta 800Kg e o peso estimado está em ${peso}`
+        if(peso>800){
+        m0.innerHTML = '<span style="color: blue;">será necessário que alguém desça para que o elevador se movimente</span>'
+
+        }
+    }
+</script>

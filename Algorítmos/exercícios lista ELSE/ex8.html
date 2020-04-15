@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Temperatura do Ambiente: <input id="temp_0" autofocus> <br>
+    <button onclick="V_cli()">Verificar Clima</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+function V_cli(){
+    temperatura = Number(temp_0.value)
+    if(temperatura<10){
+        m0.innerHTML = '<img style="width: 300px;" src="maca.jpg" alt="maça bonita">'
+    }
+    else{
+        m0.innerHTML = '<img style="width: 300px;" src="macap.jpg" alt="maça podre">'
+    }
+}
+</script>

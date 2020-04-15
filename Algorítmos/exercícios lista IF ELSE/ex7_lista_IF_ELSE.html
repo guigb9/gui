@@ -1,0 +1,42 @@
+<!--
+ _______________________________________________________________
+|valor renda|valor prestação |total                             |
+|1200       |300             |25% não necessário complementar   |
+|1200       |500             |41.66% necessário complementar    |    
+|3000       |900             |30.00% não necessário complementar|
+|1000       |900             |90.00% necessário complementar    |
+|___________|________________|__________________________________|
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Valor da Renda familiar <input id="v_renda" autofocus> <br>
+  Valor da Prestação <input id="v_prestacao"> <br>
+  <button onclick="verif()">verificar financiamento</button> <br>
+  <div id="m0"></div>
+  </b>
+</body>
+</html>
+<script>
+    function verif(){
+        var p = Number(v_prestacao.value)
+        var r = Number(v_renda.value)
+        var financiamento = (p / r)*100
+        m0.innerHTML = `A prestação corresponde à ${financiamento.toFixed(2)}% da renda familiar.`
+
+        if(financiamento > 30){
+            m0.innerHTML = `<b style="color: red;">Será necessário complementar a renda familiar</b>`
+        }
+
+
+    }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    informe a hora que assiste a série: <input id="h1" autofocus> <br>
+    <button onclick="recom_0()">Ver recomendação</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function recom_0(){
+        hora = Number(h1.value)
+        m0.innerHTML = 'O horário X é adequado para assistir sua série favorita!'
+        if(hora>=19){
+            if(hora<=21){
+                m0.innerHTML = 'Não é recomendável que você assista sua série favorita no horário X!'
+            }
+        }
+    }
+</script>

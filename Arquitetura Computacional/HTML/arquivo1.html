@@ -1,0 +1,28 @@
+<html>
+<body style="background-color: #000000">
+<center>
+<div style="background-color: #ffffff; height: 250px; width: 500px">
+<h1 style="color: #000000;"> Atividade Guilherme Gomes Barboza </h1>
+<p id="v_decimal" style="color: #000000;"></p>
+<p id="v_octal" style="color: #000000;"></p>
+<p id="v_hexa" style="color: #000000;"></p>
+<p id="v_bin" style="color: #000000;"></p>
+</div>
+</center>
+</body>
+</html>
+<script>
+let decimal = 20092001
+
+let octal = decimal.toString(8)
+
+let hexadecimal = decimal.toString(16)
+
+let binario = decimal.toString(2)
+
+
+document.getElementById("v_decimal").innerHTML = `O valor em decimal é de <b style="color: #ff0000;">${decimal}</b>`
+document.getElementById("v_octal").innerHTML = `O valor  em octal é de <b style="color: #00ff00;">${octal}</b>`
+document.getElementById("v_hexa").innerHTML = `O valor em hexadecimal é de <b style="color: #0000ff;">${hexadecimal}</b>`
+document.getElementById("v_bin").innerHTML = `O valor em binário é de <b style="color: #ffff00;">${binario}</b>`
+</script>

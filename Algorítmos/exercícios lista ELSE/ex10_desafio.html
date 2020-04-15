@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de Partidas: <input id="qntd_p" autofocus> <br>
+    Quantidade de Gols Marcados <input id="gols_m" type="text"> <br>
+    <button onclick="estudar_a()">Estudar Atacante</button>
+    <div id="m0"></div>
+    <img src="" alt="">
+</body>
+</html>
+<script>
+    function estudar_a(){
+        m0.innerHTML = ''
+        var gols = Number(gols_m.value)
+        var partidas = Number(qntd_p.value)
+        var media = gols/partidas
+        if(media<0.2){
+            m0.innerHTML = 'melhor mudar de posição <br> <img style="width: 300px;" src="atacante_ruim.jpg" alt="">'
+        }
+        if(media>=0.2){
+            if(media<=0.6){
+                m0.innerHTML = 'Atacante Mediano <br> <img style="width: 300px;"src="atacante_medio.jpg" alt="">'
+            }
+        }
+        if(media>0.6){
+            m0.innerHTML = 'Atacante de Futuro <br> <img style="width: 300px;" src="atacante_bom.jpg" alt="">'
+        }
+        m0.innerHTML += `<br> Sua média de Gols/Partida é ${media}`
+    }
+</script>

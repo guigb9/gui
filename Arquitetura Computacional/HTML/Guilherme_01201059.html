@@ -1,0 +1,40 @@
+<html>
+<body style="background-color: #7a297a">
+<center>
+<div style="background-color: #ffffff; height: 400px; width: 500px; border-radius: 20px">
+<br>
+<br>
+<br>
+<h1 style="color: #7a297a;">Guilherme's Machine</h1>
+<b>insira um número:</b>
+<br>
+<br>
+<input id="inp1">
+<br>
+<br>
+<button onclick="confirma_1()">Confirma</button>
+<br>
+<p id="v_decimal" style="color: #000000;"></p>
+<p id="v_octal" style="color: #000000;"></p>
+<p id="v_hexa" style="color: #000000;"></p>
+<p id="v_bin" style="color: #000000;"></p>
+</div>
+</center>
+</body>
+</html>
+<script>
+function confirma_1(){
+let decimal = Number(inp1.value)
+
+let octal = decimal.toString(8)
+
+let hexadecimal = decimal.toString(16)
+
+let binario = decimal.toString(2)
+
+document.getElementById("v_decimal").innerHTML = `<b>O valor em decimal é de</b> <b style="color: #ff0000;">${decimal}</b>`
+document.getElementById("v_octal").innerHTML = `<b>O valor  em octal é de</b> <b style="color: #00ff00;">${octal}</b>`
+document.getElementById("v_hexa").innerHTML = `<b>O valor em hexadecimal</b> é de <b style="color: #0000ff;">${hexadecimal}</b>`
+document.getElementById("v_bin").innerHTML = `<b>O valor em binário é de</b> <b style="color: #ffff00;">${binario}</b>`
+}
+</script>

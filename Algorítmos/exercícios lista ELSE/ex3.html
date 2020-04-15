@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de Chocolates: <input id="qntd_choc">
+    <button onclick="c0()">Compra</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+function c0(){
+    m0.innerHTML = ''
+    var Q = Number(qntd_choc.value)
+    if(Q>=12){
+    var compra = Q*2.5
+    m0.innerHTML = `O valor da compra foi de R$${compra}`
+    }
+    else{
+    var compra1 = Q*3
+    m0.innerHTML = `O valor da compra foi de R$${compra1}`
+    }
+}
+</script>

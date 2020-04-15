@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="cor do cabelo" id="sl_0">
+        <option value="1">Preto</option>
+        <option value="2">Vermelho</option>
+        <option value="3">Amarelo</option>
+        <option value="4">Castanho</option>
+    </select>
+    <br>
+    <input id="alt_0" placeholder="altura da moça" autofocus> <br>
+    <button onclick="func_0()">Deu match?!</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function func_0(){
+        var cabelo = Number(sl_0.value)
+        var altura = Number(alt_0.value)
+        if((cabelo == 1 || cabelo == 2) && altura>=1.7){
+            m0.innerHTML = '<img src="true.jpg" alt="homem fazendo joinha feliz" style="height: 300px;">'
+        } else{
+            m0.innerHTML = '<img src="false.jpg" alt="joinha pra baixo" style="height: 300px;">'
+        }
+    }
+</script>

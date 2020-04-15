@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="sorteio()">Sortear Time!!!</button>
+   <div id="m0">
+   </div>
+
+</body>
+</html>
+<script>
+    function sorteio(){
+        m0.innerHTML = ''
+        var sorteio1 = parseInt(Math.random() * 4) + 1
+        if(sorteio1 == 1){
+            m0.innerHTML = '<img src="SPFC.png" alt="" style="height: 150px;">'
+        }
+        if(sorteio1 == 2){
+             m0.innerHTML = '<img src="cor.png" alt="" style="height: 150px;">'
+        }
+        if(sorteio1 == 3){
+             m0.innerHTML = '<img src="pal.png" alt="" style="height: 150px;">'
+        }
+        if(sorteio1 == 4){
+             m0.innerHTML = '<img src="san.png" alt="" style="height: 150px;">'
+        }
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    informe a distância em Km: <input id="distancia_km" autofocus> <br>
+    <button onclick="disp_0()">Informe a Disponibilidade</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function disp_0(){
+        var D = Number(distancia_km.value)
+        if(D>=250){
+            m0.innerHTML = 'A Pizza Rãti não entrega neste endereço!'
+        }
+        if(D<250){
+            if(D>50){
+                m0.innerHTML = 'A sua pizza será entregue, porém o valor de entrega é de R$ 25,00'
+            }
+        }
+        if(D<=50){
+            m0.innerHTML = 'A sua pizza será entregue e não custará nada para você :)'
+        }
+    }
+</script>

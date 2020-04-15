@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Valor da pizza: <input id="v_pizza" autofocus> <br>
+    Quantidade de Amigos reunidos <input id="qntd_a"> <br>
+    Valor máximo por amigo: <input id="v_max">
+    <button onclick="calc_val()">Rola a Pizza?</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function calc_val(){
+        var vlp = Number(v_pizza.value)
+        var amg = Number(qntd_a.value)
+        var conta = vlp/amg
+        var max = Number(v_max.value)
+        if(conta > max){
+            m0.innerHTML = '<b>Deu ruim! pizza muito cara!</b>'
+        }
+        else{
+        m0.innerHTML = `<b>Uhu! vamos pedir pizza!</b>`
+        }
+    }
+</script>

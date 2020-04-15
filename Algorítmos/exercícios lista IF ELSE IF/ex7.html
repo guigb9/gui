@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="select1" id="sl_1" onclick="sl_0()">
+        <option value="inv">janeiro</option>
+        <option value="inv">fevereiro</option>
+        <option value="pri">março</option>
+        <option value="pri">abril</option>
+        <option value="pri">maio</option>
+        <option value="ver">junho</option>
+        <option value="ver">julho</option>
+        <option value="ver">agosto</option>
+        <option value="out">setembro</option>
+        <option value="out">outubro</option>
+        <option value=out>novembro</option>
+        <option value="inv">dezembro</option>
+    </select>
+    <br>
+    <div id="m0"></div>
+    <img src="primavera.jpg" alt="">
+</body>
+</html>
+<script>
+    function sl_0(){
+        var estacao = sl_1.value
+        if(estacao == 'inv'){
+            m0.innerHTML = '<img src="inverno.jpg" alt="inverno">'
+        }
+        else if(estacao == 'pri'){
+            m0.innerHTML = '<img src="primavera.value.jpg" alt="primavera">'
+        }
+        else if(estacao == 'ver'){
+            m0.innerHTML = '<img src="verao.jpg" alt="verao">'
+        }
+        else{
+            m0.innerHTML = '<img src="outono.jpg" alt="outono">'
+        }
+
+    }
+</script>

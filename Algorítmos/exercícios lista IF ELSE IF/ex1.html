@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nota do Aluno: <br> <br> <input id="nota_aluno" placeholder="nota" autofocus> <br>
+    <button onclick="c_al()">Classificar Aluno</button>
+</body>
+</html>
+<script>
+    function c_al(){
+        var nota = Number(nota_aluno.value)
+        if(nota < 5){
+            alert('O aluno precisa de muita ajuda!')
+        }
+        else if(nota <= 7){
+            alert('Aluno na Média!')
+        }
+        else if(nota <= 9.5){
+            alert('Aluno Acima da Média!')
+        }
+        else(
+            alert('Aluno Fora da Curva!')
+        )
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    informe a ultima série assistida: <input id="s_assis" autofocus> <br>
+    total de episódios assistidos <input id="total_ep">
+    <button onclick="v_nivel()">Verificar nível</button>
+    <div id="m0"></div>
+    <div id="m1"></div>
+</body>
+</html>
+<script>
+    function v_nivel(){
+        m0.innerHTML = ''
+        m1.innerHTML = ''
+        m0.innerHTML = `vejo que você gosta da série ${s_assis.value}`
+        var episodios = Number(total_ep.value)
+        var tempo = (22*episodios)/60
+        if(tempo > 30){
+            m1.innerHTML = 'Uau, você realmente gosta dessa série'
+        }
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    informe um ano: <input id="ano_0"> <br>
+    <button onclick="fato_0()">Ver fato</button> <br>
+    <span id="m0"></span>
+</body>
+</html>
+<script>
+    function fato_0(){
+        var ano = Number(ano_0.value)
+        if(ano<1965){
+            m0.innerHTML = `No ano ${ano} o email nem havia sido criado ainda...`
+        }
+        if(ano==1965){
+            m0.innerHTML = `No ano ${ano} o email estava sendo criado...`
+        }
+        if(ano>1965){
+            if(ano<=1969){
+                m0.innerHTML = `No ano ${ano} o email ja havia sido criado...`
+            }
+        }
+        if(ano>1969){
+            m0.innerHTML = `No ano ${ano} o email já havia sido aprimorado - Poderia ser enviado para outro computador...`
+        }
+    }
+</script>

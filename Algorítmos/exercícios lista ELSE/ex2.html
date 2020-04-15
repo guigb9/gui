@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    saldo: <input id="s0" autofocus> <br>
+    débito: <input id="d0">
+    <button onclick="a_conta()">Analisar Conta</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function  a_conta(){
+        var saldo = Number(s0.value)
+        var debito = Number(d0.value)
+        var conta = saldo - debito
+        if(conta<0){
+            m0.innerHTML = `<b style="color: red;">O saldo atual na conta corrente é ${conta.toFixed(2)}`
+        }
+        else{
+            m0.innerHTML = `<i style="color: blue;"> O saldo atual na conta corrente é ${conta.toFixed(2)}`
+        }
+    }
+</script>

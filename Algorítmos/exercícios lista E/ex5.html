@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="login_1" placeholder="Login" autofocus> <br>
+    <input type="password" id="senha_1" placeholder="Senha"> <br>
+    <button onclick="func_0()">Entrar</button> <br>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function func_0(){
+        var login = login_1.value
+        var senha = senha_1.value
+        if(login == 'aidimim' && senha == 'seinha'){
+            m0.innerHTML = '<span style="color: blue">Usuário autenticado com sucesso!</span>'
+        }else{
+            m0.innerHTML = '<span style="color: red">Login e/ou senha inválido(s)</span>'
+        }
+    }
+</script>

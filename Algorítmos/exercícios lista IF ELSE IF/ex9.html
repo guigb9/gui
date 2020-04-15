@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nota 1: <input id="n_1"> <br> <br>
+    Nota 2: <input id="n_2"> <br> <br>
+    Nota 3: <input id="n_3"> <br> <br>
+    Nota 4: <input id="n_4"> <br> <br>
+    Nota 5: <input id="n_5"> <br> <br>
+    <button onclick="aval_0()">Sua Avaliação</button> <br>
+    Sua Avaliação: <span id="m0"></span>
+    <div id="m1"></div>
+</body>
+</html>
+<script>
+    function aval_0(){
+        m1.innerHTML = ''
+        var n1 = Number(n_1.value)
+        var n2 = Number(n_2.value)
+        var n3 = Number(n_3.value)
+        var n4 = Number(n_4.value)
+        var n5 = Number(n_5.value)
+        var media = (n1 + n2 + n3 + n4 + n5)/5
+        m0.innerHTML = media.toFixed(1);
+        if(media < 2){
+            m1.innerHTML = '<img src="chorando.jpg" alt="pessoa chorando" style="height: 300px;">'
+        }
+        else if(media <= 3){
+            m1.innerHTML = '<img src="neutra.webp" alt="pessoa com expressão normal" style="height: 300px;">'
+        }
+        else if(media <= 4.5){
+            m1.innerHTML = '<img src="feliz.jpg" alt="pessoa feliz" style="height: 300px;">'
+        }
+        else{
+            m1.innerHTML = '<img src="megafeliz.jpg" alt="pessoa muito feliz" style="height: 300px;">' 
+        }
+    }
+</script>

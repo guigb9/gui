@@ -1,0 +1,35 @@
+<!--
+    teste de mesa
+    valor| resultado
+    80   | 64.08
+    90   | 72.09
+    100  | 80.10
+    110  | 97.90
+    120  | 106.80
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    KWh por mês: <input id="K_mes" autofocus>
+    <button onclick="c_luz()">Calcular conta de luz</button>
+    <span id="m0"></span>
+</body>
+</html>
+<script>
+    function c_luz(){
+        var mes = Number(K_mes.value)
+        var conta = mes*0.89
+        if(mes<=100){
+            conta = conta*0.9
+            alert(`O valor da conta é R$${conta.toFixed(2)}!`)
+        }
+        if(mes>100){
+            alert(`O valor da conta é R$${conta.toFixed(2)}`)
+        }
+    }
+</script>

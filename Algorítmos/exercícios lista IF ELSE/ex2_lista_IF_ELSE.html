@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nota1: <input id="n1" autofocus> <br>
+    nota2: <input id="n2"> <br>
+    nota3: <input id="n3"> <br>
+    <button onclick="calc_n()">Analisar Desempenho</button>
+    <div id="mostrar"></div>
+</body>
+</html>
+<script>
+    function calc_n(){
+        var nota1 = Number(n1.value)
+        var nota2 = Number(n2.value)
+        var nota3 = Number(n2.value)
+        var media = (nota1+nota2+nota3)/3
+        mostrar.innerHTML = `<b>Sua média foi de ${media.toFixed(2)}</b> <br> <b id="x"></b>`
+        if(media>9.4){
+            x.innerHTML = '<b>Parabéns você é fora de série!'
+        }
+    }
+</script>

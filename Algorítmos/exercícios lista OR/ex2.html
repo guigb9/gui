@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    forma de pagamento:
+     <select name="" id="sl_0">
+         <option value="din">Dinheiro</option>
+         <option value="deb">Cartão de Débito</option>
+         <option value="cre">Cartão de Crédito</option>
+         <option value="bol">Boleto</option>
+     </select> <br>
+     <button onclick="func_0()">Analisar Compra</button> <br>
+     <div id="m0"></div>
+</body>
+</html>
+<script>
+    function func_0(){
+        var pagamento = sl_0.value
+        if(pagamento == 'cre' || pagamento == 'bol'){
+            m0.innerHTML = 'Pagamento poderá ser parcelado'
+        }
+        else{
+            m0.innerHTML = 'você terá que pagar à vista'
+        }
+    }
+</script>

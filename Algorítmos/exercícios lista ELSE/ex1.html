@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nome: <input id="n_1" autofocus> <br>
+    idade: <input id="id_1"> <br>
+    <button onclick="aval_0()">Avaliar Aluno</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function aval_0(){
+        nome = n_1.value
+        idade =  Number(id_1.value)
+        if(idade>=18){
+            m0.innerHTML = `${nome} vamos tirar sua CNH?`
+        }
+        else{
+            m0.innerHTML = `${nome} vamos jogar PlayStation!`
+        }
+    }
+</script>

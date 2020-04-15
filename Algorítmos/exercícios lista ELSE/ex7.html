@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    frequência do aluno: <input id="freq_a">
+    <button onclick="ana_frq()">Analisar Frequência</button> <br>
+    <div id="m0"></div>
+    
+</body>
+</html>
+<script>
+function ana_frq(){
+    var frequencia = Number(freq_a.value)
+    m0.innerHTML = ''
+    if(frequencia<50){
+        m0.innerHTML = '<img style="width: 300px;" src="turista.jpg" alt="turista">'
+    }
+    else{
+        m0.innerHTML = '<img style="width: 300px;" src="estudioso.jpg" alt="estudioso">'
+    }
+
+}
+</script>

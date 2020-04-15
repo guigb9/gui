@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jokeipo()">jo-kei-po</button>
+    <div id="m0"></div>
+    
+</body>
+</html>
+<script>
+    function jokeipo(){
+        var aleatorio = parseInt(Math.random() * 9)+ 1
+        if(aleatorio<=3){
+            m0.innerHTML = '<img src="pedra.jpg" alt="" style="height: 200px">'
+        }
+        else if(aleatorio<=6){
+            m0.innerHTML = '<img src="papel.jpg" alt="" style="height: 200px">'
+        }
+        else{
+            m0.innerHTML = '<img src="tesoura.jpg" alt="" style="height: 200px">'
+        }
+
+    }
+</script>

@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0093)file:///C:/Users/Guilherme/Desktop/Bandtec/gui/Arquitetura%20Computacional/HTML/arquivo1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body style="background-color: #000000">
+<p id="v_decimal" style="color: #ffffff;">O valor em decimal é de <b style="color: #ff0000;">10</b></p>
+<p id="v_octal" style="color: #ffffff;">O valor  em octal é de <b style="color: #00ff00;">12</b></p>
+<p id="v_hexa" style="color: #ffffff;">O valor em hexadecimal é de <b style="color: #0000ff;">a</b></p>
+<p id="v_bin" style="color: #ffffff;">O valor em binário é de <b style="color: #ffff00;">1010</b></p>
+
+
+<script>
+let decimal = 10
+
+let octal = decimal.toString(8)
+
+let hexadecimal = decimal.toString(16)
+
+let binario = decimal.toString(2)
+
+
+document.getElementById("v_decimal").innerHTML = `O valor em decimal é de <b style="color: #ff0000;">${decimal}</b>`
+document.getElementById("v_octal").innerHTML = `O valor  em octal é de <b style="color: #00ff00;">${octal}</b>`
+document.getElementById("v_hexa").innerHTML = `O valor em hexadecimal é de <b style="color: #0000ff;">${hexadecimal}</b>`
+document.getElementById("v_bin").innerHTML = `O valor em binário é de <b style="color: #ffff00;">${binario}</b>`
+</script></body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Mudança de tempo</h3>
+
+    <button style="background-color: gold;" onclick="nublado()">Mudar para Nublado</button>
+    <button style="background-color: gold;" onclick="chuvoso()">Mudar para Chuvoso</button>
+    <br>
+    <img id="img_clima" src="sol.jpg" alt="dia_de_sol" style="height: 200px;">
+</body>
+</html>
+<script>
+    function nublado(){
+        img_clima.src  = 'nublado.jpg'
+    }
+    function chuvoso(){
+        img_clima.src = 'chuva.jpg'
+    }
+</script>

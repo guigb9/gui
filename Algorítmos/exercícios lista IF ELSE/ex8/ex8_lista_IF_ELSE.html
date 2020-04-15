@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Saldo da Conta: <input id="saldo_c"> <br>
+    Valor de retirada: <input id="retirada"> <br>
+    <button onclick="analisar()">Analisar Conta</button>
+    <div id="m0"></div>
+
+</body>
+</html>
+<script>
+    var cont = 0
+    var conta = 0
+    var saldo = 0
+    var debito = 0
+    function analisar(){
+        if(saldo != Number(saldo_c.value)){
+            cont = 0
+            saldo = Number(saldo_c.value)
+        }
+        if(debito != Number(retirada.value)){
+            debito = Number(retirada.value)
+            }
+        if(cont>=1){
+            conta = conta - debito
+            if(conta<0){   
+                m0.innerHTML = `<b style="color: red;">O seu saldo é de ${conta.toFixed(2)}</b>`
+            }
+            if(conta>=0){
+            m0.innerHTML = `O seu saldo é de ${conta.toFixed(2)}`
+            }
+        }
+        if(cont<1){
+            conta = saldo - debito
+            cont++
+            if(conta<0){
+                m0.innerHTML = `<b style:"color: red">  O seu saldo é de ${conta.tofixed(2)}`
+            }
+            if(conta>0){
+                m0.innerHTML = `O seu saldo é de ${conta.toFixed(2)}`
+            }
+        }
+    
+    }
+</script>

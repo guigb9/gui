@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="café" id="sl_0">
+        <option value="1">Ovos</option>
+        <option value="2">Leite de Arroz</option>
+        <option value="1">Bacon</option>
+    </select> <br>
+    <select name="almoço" id="sl_1">
+        <option value="1">Bife</option>
+        <option value="2">Hamburguer de Soja</option>
+        <option value="1">Frango Grelhado</option>
+    </select> <br>
+    <select name="janta" id="sl_2">
+        <option value="2">Picanha de Soja</option>
+        <option value="1">Cupim</option>
+        <option value="1">Coração</option>
+    </select> <br>
+    <button onclick="func_0()">Sou Vegano</button>
+</body>
+</html>
+<script>
+    function func_0(){
+        var cafe = Number(sl_0.value)
+        var almoco = Number(sl_1.value)
+        var janta = Number(sl_2.value)
+        if(cafe == 2 && almoco == 2 && janta == 2){
+            alert('Sim! você é vegano!')
+        }else{
+            alert('Não, você não é vegano!')
+        }
+    }
+</script>

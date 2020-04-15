@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="trab_0" placeholder="Tempo de Trabalho" autofocus> <br>
+    <input id="kg_trigo" placeholder="kilos de trigo produzidos"> <br>
+    <input id="faltas_trab" placeholder="Quantidade de faltas no trabalho"> <br>
+    <button onclick="func_0()">Deu match?!</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function func_0(){
+        var tempo = Number(trab_0.value)
+        var trigo = Number(kg_trigo.value)
+        var faltas = Number(faltas_trab.value)
+        if(tempo >=5 && trigo >= 350 && faltas <= 5){
+            m0.innerHTML = 'Minha filha será sua! <br> <img src="noiva.jpg" alt="noiva" style="height: 300px;">'
+        }else{
+            m0.innerHTML = 'Deu ruim! Trabalhe mais 2 anos! <br> <img src="pai.jpg" alt="pai bravo" style="height: 300px;">'
+        }
+    }
+</script>

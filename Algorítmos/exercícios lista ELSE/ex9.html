@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Tempo de cozimento do arroz <input id="arroz_0">
+    <button onclick="p_arroz()">Provar arroz</button>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    function p_arroz(){
+        var arroz = Number(arroz_0.value)
+        m0.innerHTML = ''
+        if(arroz == 5){
+            m0.innerHTML = 'Parabéns! Arroz perfeito! <br> <img style="width: 300px;" src="arroz.jpg" alt="arroz bonito">'
+        }
+        else{
+            m0.innerHTML = 'Arroz cru ou cozido demais! <br> <img style="width: 300px;" src="arrozqueimado.webp" alt="arroz zoado">' 
+        }
+
+    }
+</script>

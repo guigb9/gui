@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Você já clicou <b id="qntd_cliques">0</b> vezes! <br>
+    <span id="m0"></span> <br>
+    <button onclick="func_0()">Clica Nimim!</button>
+</body>
+</html>
+<script>
+    var cliques = Number(qntd_cliques.innerHTML)
+    function func_0(){
+        cliques++
+        qntd_cliques.innerHTML = cliques;
+        if(cliques < 5){
+            m0.innerHTML = 'Dedo fraquinho, hein'
+        }
+        else if(cliques <= 10){
+            m0.innerHTML = 'Dedo bom, mano'
+        }
+        else if(cliques <= 15){
+            m0.innerHTML = 'Gosta de clicar, hein!'
+        }
+        else{
+            m0.innerHTML = 'Eita dedo nervoso!'
+        }
+    }
+</script>

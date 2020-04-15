@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    você clicou <b id="qntd_cliques">0</b> vezes! <br>
+    <button onclick="func_0()">Clique Cabalístico</button> <br>
+    <div id="m0"></div>
+</body>
+</html>
+<script>
+    var cliques = Number(qntd_cliques.innerHTML)
+     function func_0(){
+         m0.innerHTML = ''
+         cliques++
+         qntd_cliques.innerHTML = cliques;
+        if(cliques == 3 || cliques == 4 || cliques == 7 || cliques ==10){
+            m0.innerHTML = `Você clicou ${cliques} vezes e Juliana gosta desse número!`
+        }
+     }
+</script>

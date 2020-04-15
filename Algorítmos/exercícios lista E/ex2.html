@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="temp_a" placeholder="Temperatura do ambiente" autofocus> <br>
+    <button onclick="verificar_t()">Verificar Temperatura</button>
+</body>
+</html>
+<script>
+    function verificar_t(){
+        var temperatura = Number(temp_a.value)
+        if(temperatura >=22 && temperatura <= 23){
+            alert('Temperatura Confortável')
+        }else{
+            alert('Temperatura não está confortável')
+        }
+    }
+</script>

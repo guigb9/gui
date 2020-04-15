@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Pães Franceses por dia: <br>
+    <input id="pao" autofocus> <br>
+    Bolachas por dia: <br>
+    <input id="pct_bolacha"> <br>
+    Copos de achocolatado por dia: <br>
+    <input id="cp_achoc"> <br>
+    <button onclick="func_0()">Verificar Calorias</button> <br>
+    <div id="m0"></div>
+    
+</body>
+</html>
+<script>
+    function func_0(){
+        var paes = Number(pao.value)*50
+        var bolacha = Number(pct_bolacha.value)*80
+        var chocol = Number(cp_achoc.value)*70
+        var calorias = paes + bolacha + chocol
+        if(calorias < 200){
+            m0.innerHTML = 'Parabéns, vai sair em forma da quarentena!<br> <img src="peso_ideal.jpg" alt="pessoa com o peso certo" style="height: 300px;">'
+        }
+        else if(calorias<=400){
+            m0.innerHTML = 'Cuidado, vai ficar mais "fofinho(a)" após quarentena! <br> <img src="acima_peso.jpg" alt="pessoa gordinha" style="height: 300px;">'
+        }
+        else{
+            m0.innerHTML = '"Bom, acho que muitos não vão te reconhecer após a quarentena <br><img src="obeso.jpg" alt="pessoa gordinha" style="height: 300px;">'
+        }
+    }
+</script>

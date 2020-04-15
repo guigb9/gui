@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="arroz" id="tipo_arroz">
+        <option value="1">Branco</option>
+        <option value="2">Integral</option>
+    </select>
+    <br>
+    <input placeholder="tempo de cozimento" id="temp_coz"autofocus> <br>
+    <input placeholder="quantidade de sal" id="sal_0"> <br>
+    <button onclick="func_0()">Verificar arroz</button>
+    <div id="m0"></div>
+    
+</body>
+</html>
+<script>
+    function func_0(){
+    var tipo = Number(tipo_arroz.value)
+    var tempo = Number(temp_coz.value)
+    var sal = Number(sal_0.value)
+    if(((tipo == 1) && (tempo == 10 && sal ==10))){
+        m0.innerHTML = 'Seu arroz está perfeito!!! <br> <img src="arroz.webp" alt="arroz perfeito" style="height: 300px;">'
+    }
+    else if(((tipo == 2) && (tempo == 20 && sal == 20))){
+        m0.innerHTML = 'Seu arroz está perfeito! <br> <img src="arroz_integral.png" alt="arroz integral" style="height: 300px;"> '
+
+    }
+    else{
+        m0.innerHTML = 'Seu arroz não está perfeito! <br> <img src="arroz_zuado.jpg" alt="arroz zuado" style="height: 300px;">'
+    }
+}
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Renda Individual" id="rend_u" autofocus> <br>
+    <input placeholder="Renda familiar" id="rend_f"> <br>
+    <button onclick="func_0()">Verificar Ajuda</button>
+</body>
+</html>
+<script>
+    function func_0(){
+        var individual = Number(rend_u.value)
+        var familiar = Number(rend_f.value)
+        if(individual <= 1050 && familiar <= 2100){
+            alert('Você terá direito!')
+        } else{
+            alert('você NÃO terá direito!')
+        }
+    }
+</script>
